@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+	<secrets>
+		<!-- I heard people likes secret stuff... -->
+		<secret pss="I am a huge Video Game nerd"></secret>
+		<secret pss="I love easter eggs"></secret>
+		<secret pss="I want to be an UX/Product designer in the future and then a manager"></secret>
+		<secret pss="These aren't really secrets... but I didn't know where to put them"></secret>
+	</secrets>
 	<head>
 		<!-- Required meta tags always come first -->
 		<meta charset="utf-8">
@@ -9,7 +16,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
 		
 		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
@@ -20,24 +27,24 @@
 
 	<body>
 		<div class="container" id="header">
-			<nav class="navbar navbar-full navbar-light">
-				<a class="navbar-brand" href="#">Cheng Yu Yao</a>
+			<nav class="navbar navbar-light">
+				<a class="navbar-brand" href="#">CY</a>
 
 				<ul class="nav navbar-nav pull-xs-left">
 					<li class="nav-item active">
-						<a class="nav-link" href="/">Home</a>
+						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/work">Work Exp</a>
+						<a class="nav-link" href="work.html">Work Exp</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/projects">My Projects</a>
+						<a class="nav-link" href="projects.html">My Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/skills">My Skills</a>
+						<a class="nav-link" href="skills.html">My Skills</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/courses">My Courses</a>
+						<a class="nav-link" href="education.html">Education</a>
 					</li>
 				</ul>
 			</nav>
@@ -45,67 +52,77 @@
 
 		<div class="container" id="body">
 			<div class="row" id="about">
-				<div class="col-xs-3" id="photo">
-					<img class="img-fluid" src="/" alt="Cheng Yu Yao">
+				<div id="about-top">
+					<div class="col-xs-2" id="photo">
+						<img class="img-circle" src="assets/photo.png" alt="Cheng Yu Yao" height="175" width="175">
+					</div>
+					<div class="col-xs-10" id="desc">
+						<h1 id="name">Cheng Yu Yao</h1>
+						<h5 id="major">4th Year Cognitive Systems at UBC</h5>
+						<h6>An avid software developer and designer.</h6>
+						<hr>
+						<h6 id="info">Email: <a href="mailto:chengyu2005@hotmail.com">chengyu2005@hotmail.com</a> | GitHub: <a href="www.github.com/cyao136">github.com/cyao136</a></h6>
+					</div>
 				</div>
-				<div class="col-xs-9" id="desc">
-					<h1 id="name">Cheng Yu Yao</h1>
-					<h5 id="major">4th Year Cognitive Systems at UBC</h3>
+				<div class="col-xs-12" id="para">
+					<h2>About Me</h2>
 					<hr>
-					<h6 id="info">Email: chengyu2005@hotmail.com | GitHub: <a href="www.github.com/cyao136">github.com/cyao136</a></h6>
 					<p>
-					Hello there!
 					<br>
-					Welcome to my website, my name is Cheng Yu and I am an avid software developer and designer. 
+					I was born in the city of YueYang (岳阳), Hunan, China. At the age of 7, I left China for Canada, and learned my 2nd language: Français. Then, after another 7 years living in Montréal, I moved to Vancouver and learned English. I guess all that moving and learning new languages helped me with programming? :P
 					<br>
-					A little bit about myself: I was born in the city of YueYang (岳阳), Hunan, China. At the age of 7, I left China for Canada, and learned my 2nd language: Français. Then, after another 7 years living in Montréal, I moved to Vancouver and learned English. I guess all that moving and learning new languages helped me with programming? :P
 					<br>
 					I had an obsession with technology. I would read tech news and breakthroughs all the time. It definitely helped to have experienced the birth/commercialization of LCDs, SSDs, smartphones... etc.
 					<br>
+					<br>
 					Needless to say, at the University of British Columbia, I went into Computer Science where I learned what coding and programming was. With 3 languages under my belt, a 4th one (Java) wasn't a challenge at all! And I loved it! It was everything I wanted: tech, challenging puzzles, new languages.
+					<br>
 					<br>
 					So, here I am, finishing up my degree in Cognitive Systems: Computational Intel&Design (a mouthful I know; put it simply: it's about AI and human-machine interaction), and looking forward to more awesome experience in the future!
 					<br>
 					<br>
 
-					PS: I love video games! (I just had to put this in somewhere.)
+					<p style="font-size:10px"> Pss... there's a secret on this page </p>
 					</p>
 				</div>
 			</div>
+
+			<hr>
+
 			<div class="row" id="page-links">
 				<div class="col-md-6 col-xs-12">
-					<a class="link-card" href="/work">
-						<img class="img-fluid" src="/" alt="">
+					<a class="link-card" href="work.html">
+						<!-- photo from https://www.flickr.com/photos/leon_homan/ -->
+						<img class="link-image img-fluid" src="assets/work.jpg" alt="">
 						<h1 class="link-text"> Work Experiences </h1>
 						<div class="link-shade"></div>
 					</a>
 				</div>
 				<div class="col-md-6 col-xs-12">
-					<a class="link-card" href="/projects">
-						<img class="img-fluid" src="/" alt="">
+					<a class="link-card" href="projects.html">
+						<!-- photo from https://www.flickr.com/photos/ellebeere/ -->
+						<img class="link-image img-fluid" src="assets/projects.png" alt="">
 						<h1 class="link-text"> My Projects </h1>
 						<div class="link-shade"></div>
 					</a>
 				</div>
 				<div class="col-md-6 col-xs-12">
-					<a class="link-card" href="/skills">
-						<img class="img-fluid" src="/" alt="">
+					<a class="link-card" href="skills.html">
+						<!-- photo from https://www.flickr.com/photos/iamshinji/ -->
+						<img class="link-image img-fluid" src="assets/skills.jpg" alt="">
 						<h1 class="link-text"> My Skills </h1>
 						<div class="link-shade"></div>
 					</a>
 				</div>
 				<div class="col-md-6 col-xs-12">
-					<a class="link-card" href="/courses">
-						<img class="img-fluid" src="/" alt="">
-						<h1 class="link-text"> My Courses </h1>
+					<a class="link-card" href="education.html">
+						<!-- photo from https://www.flickr.com/photos/dannynic/ -->
+						<img class="link-image img-fluid" src="assets/education.jpg" alt="">
+						<h1 class="link-text"> My Education </h1>
 						<div class="link-shade"></div>
 					</a>
 				</div>
 			</div>
-			<div class="background">
-				<img src="/" alt="">
-			</div>
 		</div>
 	</body>
-
 </html>

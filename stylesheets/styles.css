@@ -1,3 +1,18 @@
+#body {
+	margin-top: 100px;
+}
+#header {
+	padding-bottom: 0px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+#about-top {
+	padding-bottom: 200px;
+}
+#para p {
+	color: grey;
+}
+
 .link-card {
     text-align: center;
 	max-height: 275px;
@@ -6,7 +21,6 @@
 	min-width: 100%;
 	margin-bottom: 30px;
 	position: relative;
-	min-height: 1px;
 	float: left;
 }
 
@@ -32,12 +46,24 @@
 .link-image {
 	height: 275px;
 	width: 100%;
+	overflow:hidden;
 }
 
 
-.link-card:hover {
-	.link-shade {
-		opacity: 0;
-	    transition: 0.2s;
-	}
+.link-card:hover .link-shade {
+	opacity: 0;
+	transition: 0.2s;
+}
+
+#background {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: -999;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+body {
+	background: #FDFDFD;
 }
